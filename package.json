@@ -4,6 +4,7 @@
   "description": "Api para las clinicas",
   "main": "api.js",
   "scripts": {
+    "start": "node src/api.js",
     "dev": "nodemon src/api.js"
   },
   "author": "MGSE_TEAM",

@@ -34,7 +34,12 @@ const searchClinics = async (req, res) =>{
     }
 }
 
+const index = async (req, res) => {
+    res.json('Hello World')
+}
+
 module.exports = {
+    index,
     getClinics,
     searchClinics
 }
