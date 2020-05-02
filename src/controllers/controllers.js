@@ -15,7 +15,7 @@ const pool = new Pool({
 
 const getClinics = async (req,res)=>{
     try {
-        const response = await pool.query('SELECT * FROM clinicas');
+        const response = await pool.query('SELECT * FROM clinicas ORDER BY nombre ASC');
         res.json(response.rows);
         console.log(response.rows);    
     } catch (error) {
